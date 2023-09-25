@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<questions>
+    <question id="1">
+        <text>What is the value of "x"?</text>
+        <code>def funA(a):
+   return a
+def funB(b):
+   return b * 2
+def funC(c):
+   return c + 3
+x = funA(funB(funC(1)))
+</code>
+        <answers>
+               <answer id="a">4</answer>
+              <answer id="b">2</answer>
+              <answer id="c">8</answer>
+              <answer id="d">1</answer>
+        </answers>
+        <correct>c</correct>
+   </question>
+
+   <question id="2">
+    <text>What is going to be printed?</text>
+    <code>a = 10 
+b = 0 
+print ( a/b ) if (b &gt; 0 ) else print ( a )
+</code>
+    <answers>
+        <answer id="a">Runtime error : Divide by zero</answer>
+        <answer id="b">0</answer>
+        <answer id="c">10</answer>
+        <answer id="d">-10</answer>
+    </answers>
+    <correct>c</correct>
+    </question>
+
+    <question id="3">
+        <text>Choose correct order to fill the gaps:</text>
+        <code>_1_ stores multiple mutable values
+_2_ stores multiple immutable values
+_3_ stores multiple unique values
+_4_ stores multiple key value pairs</code>
+        <answers>
+            <answer id="a">(1) Dictionary   (2) Set     (3) Tuple    (4) List</answer>
+            <answer id="b">(1) Tuple   (2) Dictionary   (3) List    (4) Set</answer>
+            <answer id="c">(1) Set   (2) Tuple   (3) Dictionary   (4) List</answer>
+            <answer id="d">(1) List    (2) Tuple    (3) Set    (4) Dictionary</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+
+    <question id="4">
+        <text>What is going to be printed?</text>
+        <code>print(0xA + 0xB + 0xC)</code>
+        <answers>
+            <answer id="a">0xA0xB0xC</answer>
+            <answer id="b">0x22</answer>
+            <answer id="c">33</answer>
+            <answer id="d">TypeError</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+
+    <question id="5">
+        <text>What is going to be printed?</text>
+        <code>i=1
+while i &lt; 6:
+    i += 1
+    if i == 3 :
+        break
+    else:
+        i+=1
+i+=1
+print(i)</code>
+        <answers>
+            <answer id="a">3</answer>
+            <answer id="b">4</answer>
+            <answer id="c">5</answer>
+            <answer id="d">6</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+
+    <question id="6">
+        <text>What is going to be printed?</text>
+        <code>for i in range(-5, 4, 2):
+    if(i&lt;0):
+        continue
+    print(i, end= " ")</code>
+        <answers>
+            <answer id="a">-4 -2 0 1 2</answer>
+            <answer id="b">-5 -3 -1</answer>
+            <answer id="c">-5 -3 -1 1 3</answer>
+            <answer id="d">1 3</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+
+    <question id="7">
+        <text>What is going to be printed?</text>
+        <code>def fun(x = 4, y = 5):
+    y -= 1
+    return x * y * 1
+print(fun())</code>
+        <answers>
+            <answer id="a">20</answer>
+            <answer id="b">19</answer>
+            <answer id="c">16</answer>
+            <answer id="d">SyntaxError</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+
+    <question id="8">
+        <text>What is going to be printed?</text>
+        <code>nums = [1, 2, 3, 4, 5, 6, 7]
+print(nums[::-5])</code>
+        <answers>
+            <answer id="a">[7, 2]</answer>
+            <answer id="b">[7, 6, 5, 4, 3, 2]</answer>
+            <answer id="c">[7, 3]</answer>
+            <answer id="d">SyntaxError</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="9">
+        <text>What is going to be printed?</text>
+        <code>a = 0b1011 
+b = 0b1001 
+print(bin(a ^ b))</code>
+        <answers>
+            <answer id="a">0b01</answer>
+            <answer id="b">0b11</answer>
+            <answer id="c">0b10</answer>
+            <answer id="d">10</answer>
+            <answer id="e">SyntaxError</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+
+    <question id="10">
+        <text>What is going to be printed?</text>
+        <code>x = 0b101 
+y = 0b110 
+print(bin(x &amp; y))</code>
+        <answers>
+            <answer id="a">0b100</answer>
+            <answer id="b">0b101</answer>
+            <answer id="c">0b001</answer>
+            <answer id="d">0b110</answer>
+            <answer id="e">SyntaxError</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="11">
+        <text>What is going to be printed?</text>
+        <code>p = 0b1100 
+q = 0b1101 
+print(bin(p | q))</code>
+        <answers>
+            <answer id="a">0b1110</answer>
+            <answer id="b">0b1101</answer>
+            <answer id="c">0b1111</answer>
+            <answer id="d">0b1100</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+
+    <question id="12">
+        <text>What is going to be printed?</text>
+        <code>val1 = 0b111 
+val2 = val1 &lt;&lt; 2 
+print(bin(val2))</code>
+        <answers>
+            <answer id="a">0b00111</answer>
+            <answer id="b">0b11111</answer>
+            <answer id="c">0b11110</answer>
+            <answer id="d">0b11100</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+
+    <question id="13">
+        <text>What is going to be printed?</text>
+        <code>val = ['Python', 'Tuple'] 
+val_t = tuple(val) 
+val_t.pop() 
+print(val_t)</code>
+        <answers>
+            <answer id="a">['Python', 'Tuple']</answer>
+            <answer id="b">['Tuple']</answer>
+            <answer id="c">[]</answer>
+            <answer id="d">['Python']</answer>
+            <answer id="e">AttributeError</answer>
+        </answers>
+        <correct>e</correct>
+    </question>
+
+    <question id="14">
+        <text>What is going to be printed?</text>
+        <code>greeting = "Good Morning" 
+for ch in greeting: 
+    if ch == 'o': 
+        break 
+    print(ch) 
+else: 
+    print("Good Night")</code>
+        <answers>
+            <answer id="a">Go</answer>
+            <answer id="b">Good Night</answer>
+            <answer id="c">G</answer>
+            <answer id="d">Good Morning</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+
+    <question id="15">
+        <text>What is going to be printed?</text>
+        <code>greeting = "Good Morning" 
+for ch in greeting: 
+    if ch == 'o': 
+        continue 
+    print(ch, end=" ") 
+else: 
+    print("Good Night")</code>
+        <answers>
+            <answer id="a">ooo</answer>
+            <answer id="b">G d M r n i n g Good Night</answer>
+            <answer id="c">GdMrning</answer>
+            <answer id="d">Good Morning</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+
+    <question id="16">
+        <text>What is going to be printed?</text>
+        <code>t = tuple('Python World!') 
+print(t[:-7])</code>
+        <answers>
+            <answer id="a">('W', 'o', 'r', 'l', 'd', '!')</answer>
+            <answer id="b">('P', 'y', 't', 'h', 'o', 'n')</answer>
+            <answer id="c">('n', 'o', 'h', 't', 'y', 'P')</answer>
+            <answer id="d">[P, y, t, h, o, n]</answer>
+            <answer id="e">Syntax Error</answer>
+            <answer id="f">( '!', 'd','l','r', 'o','W')</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+
+    <question id="17">
+        <text>What is going to be printed?</text>
+        <code>x = 100 
+def glob(): 
+    global x 
+    x = 20 
+glob() 
+print(x)</code>
+        <answers>
+            <answer id="a">20</answer>
+            <answer id="b">100</answer>
+            <answer id="c">SyntaxError</answer>
+            <answer id="d">ValueError</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+
+    <question id="18">
+        <text>What will be the output of the following code?</text>
+        <code>num = 27
+binary_num = bin(num)[2:]
+reversed_binary = binary_num[::-1]
+print(int(reversed_binary, 2))</code>
+        <answers>
+            <answer id="a">36</answer>
+            <answer id="b">45</answer>
+            <answer id="c">54</answer>
+            <answer id="d">72</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+
+    <question id="19">
+        <text>What will be the content of 'output.txt' after the following code is executed?</text>
+            <code>with open('output.txt', 'w') as file:
+    for i in range(5):
+        file.write(f'{i}\n')
+
+with open('output.txt', 'r') as file:
+    content = file.read().splitlines()
+    print(content)</code>
+        <answers>
+            <answer id="a">['0', '1', '2', '3', '4']</answer>
+            <answer id="b">['1', '2', '3', '4', '5']</answer>
+            <answer id="c">0 1 2 3 4</answer>
+            <answer id="d">1 2 3 4 5</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="20">
+        <text>What will be the output of the following code?</text>
+        <code>my_list = [3, 1, 4, 1, 5, 9, 2, 6]
+sorted_list = sorted(my_list, reverse=True)
+print(sorted_list)</code>
+        <answers>
+            <answer id="a">[1, 1, 2, 3, 4, 5, 6, 9]</answer>
+            <answer id="b">[9, 6, 5, 4, 3, 2, 1, 1]</answer>
+            <answer id="c">[3, 1, 4, 1, 5, 9, 2, 6]</answer>
+            <answer id="d">[6, 2, 9, 5, 1, 4, 1, 3]</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="21">
+        <text>What will be the output of the following code?</text>
+        <code>string = 'Programming'
+new_string = string.lower().replace('a', 'z').replace('m', 'y').replace('g', 't')
+print(new_string)</code>
+        <answers>
+            <answer id="a">protryyziny</answer>
+            <answer id="b">protrayziny</answer>
+            <answer id="c">proyramyiny</answer>
+            <answer id="d">proyraytiny</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+    
+    <question id="22">
+        <text>What will be the output of the following code?</text>
+            <code>def fib(n):
+    if n &lt;= 0:
+        return "Input error"
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+
+print(fib(7))</code>
+        <answers>
+            <answer id="a">5</answer>
+            <answer id="b">8</answer>
+            <answer id="c">13</answer>
+            <answer id="d">21</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+
+    <question id="23">
+        <text>Which command prints "nsn" in the output?</text>
+        <code>a= "Tanzania" 
+b= "Australia" 
+c= "Canada"</code>
+        <answers>
+            <answer id="a">print(a[0]+b[1]+c[3])</answer>
+            <answer id="b">print(a[0]+b[1]+c[0])</answer>
+            <answer id="c">print(a[2]+b[2]+c[2])</answer>
+            <answer id="d">print(a[5]+b[2]+c[2])</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+
+    <question id="24">
+        <text>What will be the output of the following code?</text>
+        <code>a = 8
+b = a &gt;&gt; 1
+print(b)</code>
+        <answers>
+            <answer id="a">4</answer>
+            <answer id="b">16</answer>
+            <answer id="c">2</answer>
+            <answer id="d">0</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="25">
+        <text>What will be the output of the following code?</text>
+        <code>for i in range(5, -1, -2):
+    print(i, end=" ")</code>
+        <answers>
+            <answer id="a">5 3 1</answer>
+            <answer id="b">5 2 0</answer>
+            <answer id="c">5 3 1 -1</answer>
+            <answer id="d">5 4 3 2 1 0</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="26">
+        <text>What will be the output of the following code?</text>
+        <code>my_tuple = (1, 2, 3, [4, 5])
+my_tuple[3][0] = 7
+print(my_tuple)</code>
+        <answers>
+            <answer id="a">(1, 2, 3, [4, 5])</answer>
+            <answer id="b">TypeError</answer>
+            <answer id="c">(7, 2, 3, [4, 5])</answer>
+            <answer id="d">(1, 2, 3, [7, 5])</answer>
+            <answer id="e">AttributeError</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+
+    <question id="27">
+        <text>What will be the output of the following code?</text>
+        <code>my_list = [1, 2, 3, 4]
+new_list = my_list[:2] + my_list[3:]
+print(new_list)</code>
+        <answers>
+            <answer id="a">[1, 2, 3]</answer>
+            <answer id="b">[1, 2, 4]</answer>
+            <answer id="c">[1, 2]</answer>
+            <answer id="d">[2, 3, 4]</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+
+    <question id="28">
+        <text>What will be the output of the following code?</text>
+        <code>string = "hello world"
+reversed_string = string[::-1]
+print(reversed_string.capitalize())</code>
+        <answers>
+            <answer id="a">dlrow olleh</answer>
+            <answer id="b">Dlrow olleh</answer>
+            <answer id="c">DlroW ollEh</answer>
+            <answer id="d">Hello world</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+
+    <question id="29">
+        <text>What will be the output of the following code?</text>
+        <code>str1 = "Python"
+str2 = "rocks"
+result = str1.join(str2)
+print(result)</code>
+        <answers>
+            <answer id="a">Pythonrocks</answer>
+            <answer id="b">Procytkhosn</answer>
+            <answer id="c">rPythonoPythoncPythonkPythons</answer>
+            <answer id="d">PythonPythonPythonPythonPython</answer>
+            <answer id="e">rocksPython</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+
+    <question id="30">
+        <text>What will be the output of the following code?</text>
+        <code>number = 4.56789
+rounded_number = round(number, 2)
+print(rounded_number)</code>
+        <answers>
+            <answer id="a">4.56</answer>
+            <answer id="b">4.57</answer>
+            <answer id="c">4.5</answer>
+            <answer id="d">5</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+
+    <question id="31">
+        <text>What will be the output of the following code?</text>
+        <code>str_list = ["Banana", "Apple", "Cherry"]
+sorted_list = sorted(str_list)
+print(sorted_list)</code>
+        <answers>
+            <answer id="a">['Apple', 'Banana', 'Cherry']</answer>
+            <answer id="b">['Banana', 'Cherry', 'Apple']</answer>
+            <answer id="c">['Cherry', 'Banana', 'Apple']</answer>
+            <answer id="d">['Banana', 'Apple', 'Cherry']</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="32">
+        <text>What will be the output of the following code?</text>
+        <code>class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+    
+    def area(self):
+        return 3.14 * self.radius * self.radius
+
+my_circle = Circle(5)
+print(my_circle.area())</code>
+        <answers>
+            <answer id="a">25</answer>
+            <answer id="b">31.4</answer>
+            <answer id="c">None</answer>
+            <answer id="d">78.5</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+
+    <question id="33">
+        <text>What will be the output of the following code?</text>
+        <code>class Counter:
+    def __init__(self):
+        self.count = 0
+    
+    def increment(self):
+        self.count += 1
+
+counter1 = Counter()
+counter2 = Counter()
+counter1.increment()
+counter1.increment()
+counter2.increment()
+print(counter1.count, counter2.count)</code>
+        <answers>
+            <answer id="a">2 1</answer>
+            <answer id="b">3 3</answer>
+            <answer id="c">1 1</answer>
+            <answer id="d">0 0</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="34">
+        <text>What will be the output of the following code?</text>
+        <code>class MyClass:
+    def __new__(cls):
+        print("New object is being created")
+        return super().__new__(cls)
+
+    def __init__(self):
+        print("Object has been initialized")
+
+obj = MyClass()</code>
+        <answers>
+            <answer id="a">Object has been initialized\nNew object is being created</answer>
+            <answer id="b">New object is being created</answer>
+            <answer id="c">New object is being created\nObject has been initialized</answer>
+            <answer id="d">Object has been initialized</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+
+    <question id="35">
+        <text>What will be the output of the following code?</text>
+        <code>class Parent:
+    def display(self):
+        print("In Parent Class")
+
+class Child(Parent):
+    def display(self):
+        print("In Child Class")
+
+obj = Child()
+obj.display()</code>
+        <answers>
+            <answer id="a">In Parent Class</answer>
+            <answer id="b">In Child Class</answer>
+            <answer id="c">In Parent Class\nIn Child Class</answer>
+            <answer id="d">In Child Class\nIn Parent Class</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+
+    <question id="36">
+        <text>What will be the output of the following code?</text>
+        <code>class MyClass:
+    _instance = None
+
+    def __new__(cls):
+        if not cls._instance:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+
+s1 = MyClass()
+s2 = MyClass()
+print(s1 is s2)</code>
+        <answers>
+            <answer id="a">True</answer>
+            <answer id="b">False</answer>
+            <answer id="c">None</answer>
+            <answer id="d">Error</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="37">
+        <text>What will be the output of the following code?</text>
+        <code>class Rectangle:
+    def __init__(self, width, height):
+        self.__width = width
+        self.__height = height
+
+    def area(self):
+        return self.__width * self.__height
+
+class Square(Rectangle):
+    def __init__(self, side_length):
+        super().__init__(side_length, side_length)
+
+square = Square(4)
+print(square.area())</code>
+        <answers>
+            <answer id="a">16</answer>
+            <answer id="b">8</answer>
+            <answer id="c">Error</answer>
+            <answer id="d">None</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="38">
+        <text>What will be the output of the following code?</text>
+        <code>def print_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_info(name="Alice", age=25)</code>
+        <answers>
+            <answer id="a">Alice: 25</answer>
+            <answer id="b">name: Alice\nage: 25</answer>
+            <answer id="c">{'name': 'Alice', 'age': 25}</answer>
+            <answer id="d">Error</answer>
+            <answer id="e">{'name': 'Alice',\n'age': 25}</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+
+    <question id="39">
+        <text>What will be the output of the following code?</text>
+        <code>def calculate_sum(a, b, *args):
+    return a + b + sum(args)
+
+result = calculate_sum(1, 2, 3, 4, 5)
+print(result)</code>
+        <answers>
+            <answer id="a">15</answer>
+            <answer id="b">6</answer>
+            <answer id="c">3</answer>
+            <answer id="d">Error</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="40">
+        <text>What will be the output of the following code?</text>
+        <code>
+            def function_example(*args, **kwargs):
+                print(args)
+                print(kwargs)
+
+            function_example(1, 2, 3, a=4, b=5)
+        </code>
+        <answers>
+            <answer id="a">1 2 3\na 4 b 5</answer>
+            <answer id="b">(1, 2, 3, 'a', 'b')\n{}</answer>
+            <answer id="c">Error</answer>
+            <answer id="d">(1, 2, 3)\n{'a': 4, 'b': 5}</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+</questions>
